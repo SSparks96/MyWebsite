@@ -2,5 +2,5 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{babel-standalone, react-dom}" />
-  </component>
+ </component>
 </project>
