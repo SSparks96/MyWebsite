@@ -54,7 +54,7 @@
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         <a class="nav-link active" href="{% url 'about' %}">About</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
       </nav>
     </div>
 </header>
@@ -67,7 +67,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
+    <script src="{% static "pages/main.js" %}"></script>
 </div>
 </body>
 </html>
