@@ -13,3 +13,7 @@ class AboutPageView(TemplateView):
 
 class ContactPageView(TemplateView):
     template_name = 'contact.html'
+
+
+def contact(request):
+    return render(request, 'contact.html')
