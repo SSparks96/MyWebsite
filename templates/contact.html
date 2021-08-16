@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container p-4 mt-4">
+<form class="row g-3" action="contact.html" method="post">
+    <div class="col-md-6">
+        <label for="firstName" class="form-control bg-dark text-light border-dark" >First Name</label>
+        <input type="text" class="form-control" id="firstName">
+    </div>
+    <div class="col-md-6">
+        <label for="lastName" class="form-control bg-dark text-light border-dark">Last Name</label>
+        <input type="text" class="form-control" id="lastName">
+    </div>
+    <div class="col-md-6">
+        <label for="phoneNumber" class="form-control bg-dark text-light border-dark"> Phone Number</label>
+        <input type="tel" class="form-control" id="phoneNumber">
+    </div>
+    <div class="col-md-6">
+        <label for="lblEmail" class="form-control bg-dark text-light border-dark">Email</label>
+        <input type="email" class="form-control" id="lblEmail">
+    </div>
+    <div class="col-md-12">
+        <label for="lblMessage" class="bg-dark text-light border-dark">Message</label>
+        <input type="text" class="form-control" id="lblMessage" style="height: 200px">
+    </div>
+    <div class="col-12">
+        <button type="submit" value="submit" class="btn-lg btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+{% endblock %}

@@ -44,6 +44,7 @@
     </style>
     <link href="{% static 'pages/home.css' %}" rel="stylesheet">
     <link href="{% static 'pages/about.css' %}" rel="stylesheet">
+    <link href="{% static 'pages/contact.css' %}" rel="stylesheet">
 
 </head>
 <body class=" bg-dark">
@@ -52,9 +53,9 @@
     <div class="mx-auto container">
       <h3 class="float-md-start mb-0">Hello</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        <a class="nav-link active" href="{% url 'home' %}">Home</a>
         <a class="nav-link active" href="{% url 'about' %}">About</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
       </nav>
     </div>
 </header>
